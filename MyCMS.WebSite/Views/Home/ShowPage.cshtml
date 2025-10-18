@@ -1,0 +1,94 @@
+﻿@model PageDto
+<div class="col-md-8 col-sm-12 col-xs-12 pull-left">
+
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">خانه </a></li>
+       
+        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index" asp-route-Id="@Model.CateguryId">دسته بندی  </a></li>
+        <li class="breadcrumb-item active">@Model.PageTitle </li>
+    </ul>
+
+    <section class="single-news border-radius">
+        <header><h2> @Model.PageTitle </h2> <span> <i class="fa fa-calendar"></i>  انتشار : @Model.RegisterDate.ToShamsi()</span></header>
+        <article>
+            <img src="/PageImages/@Model.PageImg" />
+            <p>
+                @Model.ShortDesc
+                </p>
+            <p>
+                @Model.Content
+            </p>
+        </article>
+
+    </section>
+
+    <div class="keywords border-radius">
+        @foreach (var item in Model.PageTags.Split('-'))
+        {
+            <a href=""> @item </a>
+        }
+      <span class="btn"> تعداد بازدید: @Model.PageVisit</span>
+    </div>
+
+
+    <section class="comment-layer">
+        <header> <i class="fa fa-comments"></i><h5> دیدگاه کاربران </h5><span> 25 دیدگاه </span> </header>
+        <ul>
+            <!-- start each comment -->
+            <li>
+                <img src="img/thumb.png">
+                <div>
+                    <span> میترا رحیمی </span>
+                    <span> 25 اردیبهشت 1395 </span>
+                </div>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون ولورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و</p>
+            </li>
+            <!-- end each comment -->
+            <!-- start each comment -->
+            <li>
+                <img src="img/thumb.png">
+                <div>
+                    <span> میترا رحیمی </span>
+                    <span> 25 اردیبهشت 1395 </span>
+                </div>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون ولورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و</p>
+            </li>
+            <!-- end each comment -->
+            <!-- start each comment -->
+            <li>
+                <img src="img/thumb.png">
+                <div>
+                    <span> میترا رحیمی </span>
+                    <span> 25 اردیبهشت 1395 </span>
+                </div>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون ولورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و</p>
+            </li>
+            <!-- end each comment -->
+            <!-- start each comment -->
+            <li>
+                <img src="img/thumb.png">
+                <div>
+                    <span> میترا رحیمی </span>
+                    <span> 25 اردیبهشت 1395 </span>
+                </div>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون ولورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و</p>
+            </li>
+            <!-- end each comment -->
+        </ul>
+
+
+        <h6> شما هم دیدگاه خود را ارسال کنید </h6>
+        <form class="comment-form" action="" method="post">
+            <div>
+                <input placeholder=" نام و نام خانوادگی" type="text">
+                <input placeholder=" ایمیل خود را وارد نمایید " type="email">
+                <label> <input placeholder=" کد امنیتی  " type="text"> <img src="images/captcha.png"></label>
+            </div>
+            <textarea placeholder=" متن دیدگاه"> </textarea>
+            <input value="ثبت دیدگاه ارزشمند شما " type="submit">
+        </form>
+    </section>
+
+
+
+</div>

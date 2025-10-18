@@ -1,0 +1,72 @@
+﻿@model PageDto
+
+@{
+    ViewData["Title"] = "ویرایش خبر";
+}
+
+
+
+
+<div class="container">
+
+    <h1>ویرایش خبر</h1>
+    <form asp-action="EditPage" enctype="multipart/form-data" class="form-signin" method="post">
+        <input asp-for="Id" type="hidden" />
+        <input asp-for="RegisterDate" type="hidden" />
+        <input asp-for="PageImg" type="hidden" />
+        <input asp-for="PageVisit" type="hidden" />
+        <div class="form-group">
+            <input asp-for="PageTitle" type="text" class="form-control" placeholder="عنوان خبر" autofocus>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" asp-for="ShortDesc" placeholder="توضیح کوتاه" autofocus></textarea>
+        </div>
+        <div class="form-group">
+            <textarea asp-for="Content" class="form-control" placeholder="محتوا" autofocus></textarea>
+        </div>
+        <div class="form-group">
+            <input asp-for="PageTags" type="text" class="form-control" placeholder="برچسب ها را با  - جدا کنید" autofocus>
+        </div>
+        <div class="form-group">
+
+            <label class="col-sm-2 control-label">انتخاب تصویر</label>
+            
+            <input name="imgNews" type="file">
+        
+            <img    src="/PageImages/@Model.PageImg" class="img-thumbnail" style="max-width:200px" />
+        </div>
+
+
+        <div class="form-group">
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">دسته بندی</label>
+                <div class="col-sm-10">
+                    <select class="form-control" asp-for="CateguryId" asp-items="ViewBag.Categury" required></select>
+                </div>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label  " style="padding-left:100px" for="checkDefault">
+                    نمایش در اسلایدر
+                </label>
+                <input asp-for="isShowSlider" class="form-check-input" type="checkbox">
+
+            </div>
+        </div>
+
+        <button class=" btn btn-lg btn-success " type="submit">
+            ویرایش
+
+        </button>
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+
+    </form>
+</div>
+@section Scripts
+{
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('Content');
+    </script>
+}

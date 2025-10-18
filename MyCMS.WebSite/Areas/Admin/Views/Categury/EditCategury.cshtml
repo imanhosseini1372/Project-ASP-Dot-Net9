@@ -1,0 +1,21 @@
+﻿@using MyCMS.DataLayer.Dto.Categuries
+@model CateguryDto
+
+<div class="container">
+    <h4>ویرایش دسته بندی جدید</h4>
+
+    <form asp-action="EditCategury" class="form-signin" method="post">
+        <input asp-for="Id" type="hidden" />
+        <div class="form-group">
+            <input asp-for="CateguryTitle" type="text" class="form-control" placeholder="دسته بندی" autofocus>
+        </div>
+
+
+        <button class=" btn btn-lg btn-success " type="submit">
+            ویرایش
+        </button>
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+
+    </form>
+</div>

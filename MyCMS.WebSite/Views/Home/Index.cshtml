@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "خانه";
+    
+}
+
+
+
+<div class="col-md-8 col-sm-12 col-xs-12 ">
+
+    <!-- slider -->
+    @await Component.InvokeAsync("PageShowSliderComponent", ViewBag.CateguryId);
+    <!-- End slider -->
+    <!-- last news -->
+    @await Component.InvokeAsync("LastNewsComponent", ViewBag.CateguryId);
+    <!-- End last news -->
+
+</div>

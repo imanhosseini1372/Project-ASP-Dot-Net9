@@ -1,0 +1,58 @@
+﻿
+<!DOCTYPE html>
+<html class="no-js" dir="rtl" lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <title>  برنامه نویسان -@ViewBag.Title</title>
+    <base href="">
+    <meta name="googlebot" content="index,follow">
+    <meta name="robots" content="noodp,noydir">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" asp-append-version="true">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-rtl.min.css" asp-append-version="true">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css" asp-append-version="true">
+    <link rel="stylesheet" type="text/css" href="/css/owl.carousel.css" asp-append-version="true">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" asp-append-version="true">
+    <script src="/js/jquery.min.js"></script>
+</head>
+<body>
+    <script src="/js/modernizr.js"></script>
+
+    <partial name="_TopMenu" />
+
+    <!-- header -->
+    <partial name="_MainHeader" />
+    <!-- End Header -->
+
+    <!-- menu -->
+    @await Component.InvokeAsync("MainMenuComponent")
+    <!-- End menu -->
+
+    <!-- Main Content -->
+    <div class="container margin-top-30">
+        <div class="row">
+
+            <partial name="_RSide" />
+
+            @RenderBody()
+
+
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+  <partial name="_MainFooter">
+    <!-- End Footer -->
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/owl.carousel.js"></script>
+    <script src="/js/script.js"></script>
+
+        @RenderSection("script", false)
+        @RenderSection("Modals", false)
+
+</body>
+</html>

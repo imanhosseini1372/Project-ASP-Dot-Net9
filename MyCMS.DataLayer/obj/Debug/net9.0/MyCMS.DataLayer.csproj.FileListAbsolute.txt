@@ -1,0 +1,14 @@
+C:\Project\aspImanMadaeny\MyCMS\MyCMS.DataLayer\bin\Debug\net9.0\MyCMS.DataLayer.deps.json
+C:\Project\aspImanMadaeny\MyCMS\MyCMS.DataLayer\bin\Debug\net9.0\MyCMS.DataLayer.runtimeconfig.json
+C:\Project\aspImanMadaeny\MyCMS\MyCMS.DataLayer\bin\Debug\net9.0\MyCMS.DataLayer.dll
+C:\Project\aspImanMadaeny\MyCMS\MyCMS.DataLayer\bin\Debug\net9.0\MyCMS.DataLayer.pdb
+C:\Project\aspImanMadaeny\MyCMS\MyCMS.DataLayer\obj\Debug\net9.0\MyCMS.DataLayer.csproj.AssemblyReference.cache
+C:\Project\aspImanMadaeny\MyCMS\MyCMS.DataLayer\obj\Debug\net9.0\MyCMS.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\aspImanMadaeny\MyCMS\MyCMS.DataLayer\obj\Debug\net9.0\MyCMS.DataLayer.AssemblyInfoInputs.cache
+C:\Project\aspImanMadaeny\MyCMS\MyCMS.DataLayer\obj\Debug\net9.0\MyCMS.DataLayer.AssemblyInfo.cs
+C:\Project\aspImanMadaeny\MyCMS\MyCMS.DataLayer\obj\Debug\net9.0\MyCMS.DataLayer.csproj.CoreCompileInputs.cache
+C:\Project\aspImanMadaeny\MyCMS\MyCMS.DataLayer\obj\Debug\net9.0\MyCMS.DataLayer.dll
+C:\Project\aspImanMadaeny\MyCMS\MyCMS.DataLayer\obj\Debug\net9.0\refint\MyCMS.DataLayer.dll
+C:\Project\aspImanMadaeny\MyCMS\MyCMS.DataLayer\obj\Debug\net9.0\MyCMS.DataLayer.pdb
+C:\Project\aspImanMadaeny\MyCMS\MyCMS.DataLayer\obj\Debug\net9.0\MyCMS.DataLayer.genruntimeconfig.cache
+C:\Project\aspImanMadaeny\MyCMS\MyCMS.DataLayer\obj\Debug\net9.0\ref\MyCMS.DataLayer.dll

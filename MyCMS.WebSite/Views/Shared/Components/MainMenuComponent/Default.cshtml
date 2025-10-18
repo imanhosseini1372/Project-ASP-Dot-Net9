@@ -1,0 +1,49 @@
+﻿@using MyCMS.DataLayer.Dto.Categuries
+@model List<CateguryDto>
+<nav class="main-menu">
+    <div class="container menu-flex">
+        <!-- منوی سمت راست -->
+        <ul class="main-menu-items">
+            <li><a asp-controller="Home"asp-action="Index">صفحه اصلی</a></li>
+            @foreach (var item in Model)
+            {
+                <li><a asp-route-Id="@item.Id">@item.CateguryTitle</a></li>
+
+            }
+           
+        </ul>
+
+        <!-- منوی سمت چپ -->
+        <ul class="user-panel">
+            <li>
+                <span>پنل کاربری</span>
+                <ul>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <span>@User.Identity.Name جان خوش آمدید</span>
+                        <span>@User.FindFirst("UserId").Value;</span>
+                        <li><a asp-action="ChangePassword" asp-controller="Home" asp-area="UserPanel">تغییر رمز عبور</a></li>
+
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li><a asp-area="Admin">مدیریت </a></li>
+                        }
+
+                        <li><a asp-area="UserPanel">مدیریت حساب کاربری</a></li>
+
+
+                        <li><a href="">سبد خرید</a></li>
+                        <li><a asp-controller="Account" asp-action="Logout">خروج</a></li>
+
+                    }
+                    else
+                    {
+                        <li><a asp-controller="Account" asp-action="Register">ثبت نام</a></li>
+                        <li><a asp-controller="Account" asp-action="Login">ورود به سایت</a></li>
+                    }
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</nav>

@@ -1,0 +1,23 @@
+﻿
+@model IEnumerable<PageShortDto>
+
+<div class="news-slider border-radius">
+    <div id="slider-one" class="owl-carousel">
+        <!-- each item -->
+    @foreach (var item in Model)
+        {
+            <div class="item">
+                <img src="/PageImages/@item.PageImg">
+                <div class="left-side">
+                    <h2> <a asp-action="showPage" asp-route-id="@item.Id">@item.PageTitle</a> </h2>
+                    <p>@item.ShortDesc</p>
+                    <span> <i class="fa fa-calendar"></i> انتشار : @item.RegisterDate.ToShamsi()</span>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        }
+        <!-- end each item -->
+      
+    </div>
+    <a href="" class="news-archive"> <i class="icons icon-doc-1"></i> آرشیو کامل خبرها </a>
+</div>

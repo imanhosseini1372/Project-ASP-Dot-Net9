@@ -1,0 +1,19 @@
+﻿@using MyCMS.Application.Convertor
+    <!-- Top Menu -->
+<div class="top-menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-5">
+                <ul>
+                    <li><a asp-controller="Home" asp-action="Index" ><i class="fa fa-home"></i></a></li>
+                    <li><a href=""><i class="fa fa-question-circle"></i></a></li>
+                    <li><a href=""><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-7">
+                <span>امروز : @DateTime.Now.ToShamsi()</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Top Menu -->

@@ -1,0 +1,12 @@
+﻿@using MyCMS.DataLayer.Dto.Categuries
+@model List<CateguryPageCountDto>
+<section class="category-section border-radius">
+    <header><i class="fa fa-folder-open-o"></i> <h3> دسته بندی ها </h3></header>
+    <ul>
+       @foreach (var item in Model)
+        {
+            <li><a asp-controller="Home" asp-action="Index" asp-route-Id="@item.Id"> @item.CateguryTitle <span>@item.PageCount</span></a></li>
+        }
+    
+    </ul>
+</section>
