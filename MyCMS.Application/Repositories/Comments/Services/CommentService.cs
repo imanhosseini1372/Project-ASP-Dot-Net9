@@ -54,7 +54,7 @@ namespace MyCMS.Application.Repositories.Comments.Services
             return _db.Comments.SingleOrDefault(e => e.Id == commentId);
         }
 
-        public IEnumerable<CommentDto> GetAllComments(int pageNumber, int pageSize)
+        public IEnumerable<CommentDto> GetCommentsByDto(int pageNumber, int pageSize)
         {
             return _db.Comments
                 .Include(e => e.Page)

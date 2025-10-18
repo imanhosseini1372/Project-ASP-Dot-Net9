@@ -15,7 +15,7 @@ namespace MyCMS.Application.Repositories.Comments.Interfaces
         #region Queries
         public IEnumerable<Comment> GetAllComments(bool isInclude = false);
         public Comment GetCommentById(int commentId, bool isInclude = false);
-        public IEnumerable<CommentDto> GetAllComments(int pageNumber, int pageSize);
+        public IEnumerable<CommentDto> GetCommentsByDto(int pageNumber, int pageSize);
         public int PageCount(int pageSize);
         #endregion
 
