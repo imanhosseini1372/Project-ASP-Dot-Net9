@@ -99,8 +99,7 @@ namespace MyCMS.DataLayer.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CommentBy")
-                        .IsUnique();
+                    b.HasIndex("CommentBy");
 
                     b.HasIndex("PageId");
 
@@ -273,8 +272,8 @@ namespace MyCMS.DataLayer.Migrations
             modelBuilder.Entity("MyCMS.DataLayer.Models.Comment", b =>
                 {
                     b.HasOne("MyCMS.DataLayer.Models.User", "User")
-                        .WithOne()
-                        .HasForeignKey("MyCMS.DataLayer.Models.Comment", "CommentBy")
+                        .WithMany("Comments")
+                        .HasForeignKey("CommentBy")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -319,6 +318,11 @@ namespace MyCMS.DataLayer.Migrations
             modelBuilder.Entity("MyCMS.DataLayer.Models.Page", b =>
                 {
                     b.Navigation("Comment");
+                });
+
+            modelBuilder.Entity("MyCMS.DataLayer.Models.User", b =>
+                {
+                    b.Navigation("Comments");
                 });
 #pragma warning restore 612, 618
         }

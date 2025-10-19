@@ -1,38 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Project\\aspImanMadaeny\\MyCMS\\",
+  "WorkspaceRootPath": "C:\\Project\\Mycms\\Project-ASP-Dot-Net9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3CE22EE9-775C-47A0-B5CF-18A2602A0AE9}|MyCMS.WebSite\\MyCMS.WebSite.csproj|c:\\project\\aspimanmadaeny\\mycms\\mycms.website\\areas\\admin\\views\\comments\\commentsnotapproved.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3CE22EE9-775C-47A0-B5CF-18A2602A0AE9}|MyCMS.WebSite\\MyCMS.WebSite.csproj|solutionrelative:mycms.website\\areas\\admin\\views\\comments\\commentsnotapproved.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CE22EE9-775C-47A0-B5CF-18A2602A0AE9}|MyCMS.WebSite\\MyCMS.WebSite.csproj|c:\\project\\aspimanmadaeny\\mycms\\mycms.website\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3CE22EE9-775C-47A0-B5CF-18A2602A0AE9}|MyCMS.WebSite\\MyCMS.WebSite.csproj|solutionrelative:mycms.website\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CE22EE9-775C-47A0-B5CF-18A2602A0AE9}|MyCMS.WebSite\\MyCMS.WebSite.csproj|c:\\project\\aspimanmadaeny\\mycms\\mycms.website\\areas\\admin\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CE22EE9-775C-47A0-B5CF-18A2602A0AE9}|MyCMS.WebSite\\MyCMS.WebSite.csproj|solutionrelative:mycms.website\\areas\\admin\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E7CC592-B9CE-4CF3-B795-383BEFE4DEEC}|MyCMS.Application\\MyCMS.Application.csproj|c:\\project\\aspimanmadaeny\\mycms\\mycms.application\\repositories\\comments\\interfaces\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E7CC592-B9CE-4CF3-B795-383BEFE4DEEC}|MyCMS.Application\\MyCMS.Application.csproj|solutionrelative:mycms.application\\repositories\\comments\\interfaces\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E7CC592-B9CE-4CF3-B795-383BEFE4DEEC}|MyCMS.Application\\MyCMS.Application.csproj|c:\\project\\aspimanmadaeny\\mycms\\mycms.application\\repositories\\comments\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E7CC592-B9CE-4CF3-B795-383BEFE4DEEC}|MyCMS.Application\\MyCMS.Application.csproj|c:\\project\\mycms\\project-asp-dot-net9\\mycms.application\\repositories\\comments\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E7CC592-B9CE-4CF3-B795-383BEFE4DEEC}|MyCMS.Application\\MyCMS.Application.csproj|solutionrelative:mycms.application\\repositories\\comments\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CE22EE9-775C-47A0-B5CF-18A2602A0AE9}|MyCMS.WebSite\\MyCMS.WebSite.csproj|c:\\project\\aspimanmadaeny\\mycms\\mycms.website\\areas\\admin\\views\\shared\\_rmenuadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3CE22EE9-775C-47A0-B5CF-18A2602A0AE9}|MyCMS.WebSite\\MyCMS.WebSite.csproj|solutionrelative:mycms.website\\areas\\admin\\views\\shared\\_rmenuadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3CE22EE9-775C-47A0-B5CF-18A2602A0AE9}|MyCMS.WebSite\\MyCMS.WebSite.csproj|c:\\project\\mycms\\project-asp-dot-net9\\mycms.website\\areas\\admin\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CE22EE9-775C-47A0-B5CF-18A2602A0AE9}|MyCMS.WebSite\\MyCMS.WebSite.csproj|solutionrelative:mycms.website\\areas\\admin\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CE22EE9-775C-47A0-B5CF-18A2602A0AE9}|MyCMS.WebSite\\MyCMS.WebSite.csproj|c:\\project\\aspimanmadaeny\\mycms\\mycms.website\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CE22EE9-775C-47A0-B5CF-18A2602A0AE9}|MyCMS.WebSite\\MyCMS.WebSite.csproj|solutionrelative:mycms.website\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CE22EE9-775C-47A0-B5CF-18A2602A0AE9}|MyCMS.WebSite\\MyCMS.WebSite.csproj|c:\\project\\mycms\\project-asp-dot-net9\\mycms.website\\areas\\admin\\views\\comments\\commentsnotapproved.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CE22EE9-775C-47A0-B5CF-18A2602A0AE9}|MyCMS.WebSite\\MyCMS.WebSite.csproj|solutionrelative:mycms.website\\areas\\admin\\views\\comments\\commentsnotapproved.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{981DF4FB-41F7-4F04-BEEF-1FCD91911ED4}|MyCMS.DataLayer\\MyCMS.DataLayer.csproj|c:\\project\\aspimanmadaeny\\mycms\\mycms.datalayer\\dto\\comments\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{981DF4FB-41F7-4F04-BEEF-1FCD91911ED4}|MyCMS.DataLayer\\MyCMS.DataLayer.csproj|solutionrelative:mycms.datalayer\\dto\\comments\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CE22EE9-775C-47A0-B5CF-18A2602A0AE9}|MyCMS.WebSite\\MyCMS.WebSite.csproj|c:\\project\\mycms\\project-asp-dot-net9\\mycms.website\\areas\\admin\\views\\comments\\commentslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CE22EE9-775C-47A0-B5CF-18A2602A0AE9}|MyCMS.WebSite\\MyCMS.WebSite.csproj|solutionrelative:mycms.website\\areas\\admin\\views\\comments\\commentslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 377,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,105 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Project\\aspImanMadaeny\\MyCMS\\MyCMS.WebSite\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "MyCMS.WebSite\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Project\\aspImanMadaeny\\MyCMS\\MyCMS.WebSite\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "MyCMS.WebSite\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-18T08:50:11.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CommentsNotApproved.cshtml",
-              "DocumentMoniker": "C:\\Project\\aspImanMadaeny\\MyCMS\\MyCMS.WebSite\\Areas\\Admin\\Views\\Comments\\CommentsNotApproved.cshtml",
-              "RelativeDocumentMoniker": "MyCMS.WebSite\\Areas\\Admin\\Views\\Comments\\CommentsNotApproved.cshtml",
-              "ToolTip": "C:\\Project\\aspImanMadaeny\\MyCMS\\MyCMS.WebSite\\Areas\\Admin\\Views\\Comments\\CommentsNotApproved.cshtml",
-              "RelativeToolTip": "MyCMS.WebSite\\Areas\\Admin\\Views\\Comments\\CommentsNotApproved.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-18T08:49:40.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CommentsController.cs",
-              "DocumentMoniker": "C:\\Project\\aspImanMadaeny\\MyCMS\\MyCMS.WebSite\\Areas\\Admin\\Controllers\\CommentsController.cs",
-              "RelativeDocumentMoniker": "MyCMS.WebSite\\Areas\\Admin\\Controllers\\CommentsController.cs",
-              "ToolTip": "C:\\Project\\aspImanMadaeny\\MyCMS\\MyCMS.WebSite\\Areas\\Admin\\Controllers\\CommentsController.cs",
-              "RelativeToolTip": "MyCMS.WebSite\\Areas\\Admin\\Controllers\\CommentsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T08:44:18.887Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Project\\aspImanMadaeny\\MyCMS\\MyCMS.WebSite\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "MyCMS.WebSite\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Project\\aspImanMadaeny\\MyCMS\\MyCMS.WebSite\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "MyCMS.WebSite\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T08:40:58.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_RMenuAdmin.cshtml",
-              "DocumentMoniker": "C:\\Project\\aspImanMadaeny\\MyCMS\\MyCMS.WebSite\\Areas\\Admin\\Views\\Shared\\_RMenuAdmin.cshtml",
-              "RelativeDocumentMoniker": "MyCMS.WebSite\\Areas\\Admin\\Views\\Shared\\_RMenuAdmin.cshtml",
-              "ToolTip": "C:\\Project\\aspImanMadaeny\\MyCMS\\MyCMS.WebSite\\Areas\\Admin\\Views\\Shared\\_RMenuAdmin.cshtml",
-              "RelativeToolTip": "MyCMS.WebSite\\Areas\\Admin\\Views\\Shared\\_RMenuAdmin.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAuwCsAAABXAAAAAAAAAA==",
+              "Title": "CommentsNotApproved.cshtml",
+              "DocumentMoniker": "C:\\Project\\Mycms\\Project-ASP-Dot-Net9\\MyCMS.WebSite\\Areas\\Admin\\Views\\Comments\\CommentsNotApproved.cshtml",
+              "RelativeDocumentMoniker": "MyCMS.WebSite\\Areas\\Admin\\Views\\Comments\\CommentsNotApproved.cshtml",
+              "ToolTip": "C:\\Project\\Mycms\\Project-ASP-Dot-Net9\\MyCMS.WebSite\\Areas\\Admin\\Views\\Comments\\CommentsNotApproved.cshtml",
+              "RelativeToolTip": "MyCMS.WebSite\\Areas\\Admin\\Views\\Comments\\CommentsNotApproved.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-18T08:37:56.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CommentDto.cs",
-              "DocumentMoniker": "C:\\Project\\aspImanMadaeny\\MyCMS\\MyCMS.DataLayer\\Dto\\Comments\\CommentDto.cs",
-              "RelativeDocumentMoniker": "MyCMS.DataLayer\\Dto\\Comments\\CommentDto.cs",
-              "ToolTip": "C:\\Project\\aspImanMadaeny\\MyCMS\\MyCMS.DataLayer\\Dto\\Comments\\CommentDto.cs",
-              "RelativeToolTip": "MyCMS.DataLayer\\Dto\\Comments\\CommentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T16:04:07.558Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CommentService.cs",
-              "DocumentMoniker": "C:\\Project\\aspImanMadaeny\\MyCMS\\MyCMS.Application\\Repositories\\Comments\\Services\\CommentService.cs",
-              "RelativeDocumentMoniker": "MyCMS.Application\\Repositories\\Comments\\Services\\CommentService.cs",
-              "ToolTip": "C:\\Project\\aspImanMadaeny\\MyCMS\\MyCMS.Application\\Repositories\\Comments\\Services\\CommentService.cs",
-              "RelativeToolTip": "MyCMS.Application\\Repositories\\Comments\\Services\\CommentService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwDgAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T13:49:00.023Z",
+              "WhenOpened": "2025-10-19T10:06:04.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ICommentService.cs",
-              "DocumentMoniker": "C:\\Project\\aspImanMadaeny\\MyCMS\\MyCMS.Application\\Repositories\\Comments\\Interfaces\\ICommentService.cs",
-              "RelativeDocumentMoniker": "MyCMS.Application\\Repositories\\Comments\\Interfaces\\ICommentService.cs",
-              "ToolTip": "C:\\Project\\aspImanMadaeny\\MyCMS\\MyCMS.Application\\Repositories\\Comments\\Interfaces\\ICommentService.cs",
-              "RelativeToolTip": "MyCMS.Application\\Repositories\\Comments\\Interfaces\\ICommentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA4AAAAAAAAAA==",
+              "Title": "CommentsList.cshtml",
+              "DocumentMoniker": "C:\\Project\\Mycms\\Project-ASP-Dot-Net9\\MyCMS.WebSite\\Areas\\Admin\\Views\\Comments\\CommentsList.cshtml",
+              "RelativeDocumentMoniker": "MyCMS.WebSite\\Areas\\Admin\\Views\\Comments\\CommentsList.cshtml",
+              "ToolTip": "C:\\Project\\Mycms\\Project-ASP-Dot-Net9\\MyCMS.WebSite\\Areas\\Admin\\Views\\Comments\\CommentsList.cshtml",
+              "RelativeToolTip": "MyCMS.WebSite\\Areas\\Admin\\Views\\Comments\\CommentsList.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-19T10:05:17.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CommentService.cs",
+              "DocumentMoniker": "C:\\Project\\Mycms\\Project-ASP-Dot-Net9\\MyCMS.Application\\Repositories\\Comments\\Services\\CommentService.cs",
+              "RelativeDocumentMoniker": "MyCMS.Application\\Repositories\\Comments\\Services\\CommentService.cs",
+              "ToolTip": "C:\\Project\\Mycms\\Project-ASP-Dot-Net9\\MyCMS.Application\\Repositories\\Comments\\Services\\CommentService.cs",
+              "RelativeToolTip": "MyCMS.Application\\Repositories\\Comments\\Services\\CommentService.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAswLkAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T13:48:25.319Z",
+              "WhenOpened": "2025-10-19T10:02:51.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommentsController.cs",
+              "DocumentMoniker": "C:\\Project\\Mycms\\Project-ASP-Dot-Net9\\MyCMS.WebSite\\Areas\\Admin\\Controllers\\CommentsController.cs",
+              "RelativeDocumentMoniker": "MyCMS.WebSite\\Areas\\Admin\\Controllers\\CommentsController.cs",
+              "ToolTip": "C:\\Project\\Mycms\\Project-ASP-Dot-Net9\\MyCMS.WebSite\\Areas\\Admin\\Controllers\\CommentsController.cs",
+              "RelativeToolTip": "MyCMS.WebSite\\Areas\\Admin\\Controllers\\CommentsController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAowDYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T10:01:44.266Z",
               "EditorCaption": ""
             }
           ]

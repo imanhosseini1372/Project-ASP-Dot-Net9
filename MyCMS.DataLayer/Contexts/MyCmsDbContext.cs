@@ -32,11 +32,10 @@ namespace MyCMS.DataLayer.Contexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Comment>(e =>
-            {e.HasOne(c => c.User)
-               .WithOne() 
-               .HasForeignKey<Comment>(c => c.CommentBy);
-            }
+            modelBuilder.Entity<User>()
+     .HasMany(u => u.Comments) // یک User چندین Comment دارد.
+     .WithOne(c => c.User)     // هر Comment فقط یک User دارد.
+     .HasForeignKey(c => c.CommentBy
            );
 
             //SetConfigEntities

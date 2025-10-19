@@ -16,6 +16,7 @@ namespace MyCMS.Application.Repositories.Comments.Interfaces
         public IEnumerable<Comment> GetAllComments(bool isInclude = false);
         public Comment GetCommentById(int commentId, bool isInclude = false);
         public IEnumerable<CommentDto> GetCommentsByDto(int pageNumber, int pageSize);
+        public IEnumerable<CommentDto> GetCommentsByDtoNotApproved(int pageNumber, int pageSize);
         public int PageCount(int pageSize);
         #endregion
 
@@ -23,6 +24,11 @@ namespace MyCMS.Application.Repositories.Comments.Interfaces
         int AddComment(Comment comment);
         bool DeleteComment(int CommentId);
         bool UpdateComment(Comment comment);
+        bool AllApprovedComment();
+        bool ChangeApprovedComment(int commentId);
+
+        List<Comment> GetCommentsApprovedByPageId(int pageId);
+
         #endregion
     }
 }

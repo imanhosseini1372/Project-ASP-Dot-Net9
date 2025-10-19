@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using MyCMS.DataLayer.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -25,5 +26,6 @@ namespace MyCMS.DataLayer.Dto.Pages
         public bool isShowSlider { get; set; }
         public int CateguryId { get; set; }
         public IFormFile? imgNews { get; set; }
+        public List<Comment>? Comments { get; set; }
     }
 }

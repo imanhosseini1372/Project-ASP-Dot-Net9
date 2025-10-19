@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "مدیریت پیام";
+
+}
+@model IEnumerable<CommentDto>
+
+<div class="container">
+    <h3 class="text-center">لیست نظرات</h3>
+
+  
+
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+            <tr class="info">
+                <th>ردیف</th>
+                <th>متن نظر</th>
+                <th>خبر</th>
+                <th>دسته بندی</th>
+                <th>ثبت کننده نظر </th>
+                <th>تاریخ ایجاد </th>
+                <th>تایید شده </th>
+
+                <th>عملیات</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td></td>
+                    <td>@item.CommentText</td>
+                    <td>@item.PageTitle</td>
+                    <td>@item.CateguryTitle</td>
+                    <td>@item.CommentByName</td>
+                    <td>@item.RegisterDate.ToShamsi()</td>
+                    <td>
+                        @if (item.isApproved)
+                        {
+                            <input type="checkbox" checked />
+                        }
+                        else
+                        {
+                            <input type="checkbox" />
+                        }
+                    </td>
+
+                    <td>
+                        @if (!item.isApproved)
+                        {
+                            <a asp-action="ApprovedComment" asp-route-commentId="@item.Id" class="btn btn-xs btn-info">تایید</a>
+                        }
+                        else
+                        {
+                            <a asp-action="ApprovedComment" asp-route-commentId="@item.Id" class="btn btn-xs btn-info">عدم تایید</a>
+                        }
+                        <a asp-action="DeleteComment" asp-route-commentId="@item.Id" class="btn btn-xs btn-danger">حذف</a>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+    @if (ViewBag.Count > 1)
+    {
+        <nav aria-label="...">
+            <ul class="pagination">
+                @if (ViewBag.Previous >= 1)
+                {
+
+                    <li class="page-item">
+                        <a class="page-link" class="page-link" asp-area="Admin" asp-controller="Comments" asp-action="CommentsList" asp-route-PageNum=@ViewBag.Previous>Previous</a>
+                    </li>
+
+                }
+                @for (int i = 1; i <= ViewBag.Count; i++)
+                {
+                    if (i == ViewBag.PageNum)
+                    {
+                        <li class="page-item active">
+                            <a class="page-link" asp-area="Admin" asp-controller="Comments" asp-action="CommentsList" asp-route-PageNum="@i">@i <span class="sr-only">(current)</span></a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item"><a class="page-link" asp-area="Admin" asp-controller="Comments" asp-action="CommentsList" asp-route-PageNum="@i">@i</a></li>
+                    }
+
+                }
+
+                @if (ViewBag.Next <= ViewBag.Count)
+                {
+                    <li class="page-item">
+                        <a class="page-link" class="page-link" asp-area="Admin" asp-controller="Comments" asp-action="CommentsList" asp-route-PageNum="@ViewBag.Next">Next</a>
+                    </li>
+                }
+
+            </ul>
+        </nav>
+    }
+</div>

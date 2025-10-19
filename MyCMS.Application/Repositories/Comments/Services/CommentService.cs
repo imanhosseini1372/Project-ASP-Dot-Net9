@@ -16,12 +16,12 @@ using System.Threading.Tasks;
 
 namespace MyCMS.Application.Repositories.Comments.Services
 {
-    public class CommentService : BaseGenericRepository<Comment>,ICommentService
+    public class CommentService : BaseGenericRepository<Comment>, ICommentService
     {
         #region Inject
         private readonly MyCmsDbContext _db;
 
-        public CommentService(MyCmsDbContext db):base(context:db)
+        public CommentService(MyCmsDbContext db) : base(context: db)
         {
             _db = db;
         }
@@ -37,7 +37,7 @@ namespace MyCMS.Application.Repositories.Comments.Services
                 return _db.Comments.Include(e => e.User)
                 .Include(e => e.Page)
                 .ThenInclude(e => e.Categury);
-                
+
             }
             return _db.Comments;
         }
@@ -59,19 +59,39 @@ namespace MyCMS.Application.Repositories.Comments.Services
             return _db.Comments
                 .Include(e => e.Page)
                 .ThenInclude(e => e.Categury)
-                .Include(e=>e.User)
-                .Select(e => new CommentDto () 
-                 {
-                 Id = e.Id,
-                 CommentText = e.CommentText,
-                 CommentBy = e.CommentBy,
-                 CommentByName = e.User.Email,
-                 PageTitle=e.Page.PageTitle,
-                 CateguryTitle=e.Page.Categury.CateguryTitle,
-                 RegisterDate=e.RegisterDate,
-                 isApproved=e.isApproved
+                .Include(e => e.User)
+                .Select(e => new CommentDto()
+                {
+                    Id = e.Id,
+                    CommentText = e.CommentText,
+                    CommentBy = e.CommentBy,
+                    CommentByName = e.User.Email,
+                    PageTitle = e.Page.PageTitle,
+                    CateguryTitle = e.Page.Categury.CateguryTitle,
+                    RegisterDate = e.RegisterDate,
+                    isApproved = e.isApproved
 
-                 });
+                }).OrderByDescending(e => e.RegisterDate);
+        }
+        public IEnumerable<CommentDto> GetCommentsByDtoNotApproved(int pageNumber, int pageSize)
+        {
+            return _db.Comments
+                .Where(e => !e.isApproved)
+                .Include(e => e.Page)
+                .ThenInclude(e => e.Categury)
+                .Include(e => e.User)
+                .Select(e => new CommentDto()
+                {
+                    Id = e.Id,
+                    CommentText = e.CommentText,
+                    CommentBy = e.CommentBy,
+                    CommentByName = e.User.Email,
+                    PageTitle = e.Page.PageTitle,
+                    CateguryTitle = e.Page.Categury.CateguryTitle,
+                    RegisterDate = e.RegisterDate,
+                    isApproved = e.isApproved
+
+                }).OrderByDescending(e => e.RegisterDate);
         }
 
         public int PageCount(int pageSize)
@@ -79,12 +99,15 @@ namespace MyCMS.Application.Repositories.Comments.Services
             var res = Math.Ceiling(_db.Comments.Count() / (decimal)pageSize);
             return Convert.ToInt32(res);
         }
-
+       public List<Comment> GetCommentsApprovedByPageId(int pageId) 
+        {
+            return _db.Comments.Where(e => e.PageId == pageId && e.isApproved).Include(e => e.User).ToList();
+        }
 
         #endregion
 
         #region Commands
-     
+
         public int AddComment(Comment comment)
         {
             try
@@ -132,9 +155,9 @@ namespace MyCMS.Application.Repositories.Comments.Services
                     c.CommentText = comment.CommentText;
                     c.CommentBy = comment.CommentBy;
                     c.isApproved = comment.isApproved;
-                    c.Id= comment.Id;
-                    c.PageId= comment.PageId;
-                    c.Page=comment.Page;
+                    c.Id = comment.Id;
+                    c.PageId = comment.PageId;
+                    c.Page = comment.Page;
                     _db.SaveChanges();
                     return true;
                 }
@@ -147,8 +170,24 @@ namespace MyCMS.Application.Repositories.Comments.Services
             }
         }
 
-      
 
+       public bool AllApprovedComment()
+        {
+           var commentNotApproved= GetAsync(e=>!e.isApproved).Result.ToList();
+            foreach (var item in commentNotApproved)
+            {
+                item.isApproved = true;
+            }
+            _db.SaveChanges();
+            return false;
+        }
+       public bool ChangeApprovedComment(int commentId)
+        {
+           var c= GetCommentById(commentId);
+           c.isApproved=!c.isApproved;
+            _db.SaveChanges();
+            return false;
+        }
 
         #endregion
     }

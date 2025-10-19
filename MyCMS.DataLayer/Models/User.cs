@@ -16,6 +16,7 @@ namespace MyCMS.DataLayer.Models
         public string Email { get; set; }
         public int RoleId { get; set; }
         public Role Role { get; set; }
+        public ICollection<Comment>? Comments { get; set; }
 
     }
 
