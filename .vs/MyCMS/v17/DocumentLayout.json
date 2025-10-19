@@ -42,11 +42,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 377,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -58,8 +62,7 @@
               "RelativeToolTip": "MyCMS.WebSite\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-18T08:50:11.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T08:50:11.376Z"
             },
             {
               "$type": "Document",
@@ -84,8 +87,7 @@
               "RelativeToolTip": "MyCMS.WebSite\\Areas\\Admin\\Controllers\\CommentsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T08:44:18.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T08:44:18.887Z"
             },
             {
               "$type": "Document",
@@ -97,8 +99,7 @@
               "RelativeToolTip": "MyCMS.WebSite\\Areas\\Admin\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T08:40:58.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T08:40:58.941Z"
             },
             {
               "$type": "Document",
@@ -110,8 +111,7 @@
               "RelativeToolTip": "MyCMS.WebSite\\Areas\\Admin\\Views\\Shared\\_RMenuAdmin.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAuwCsAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-18T08:37:56.541Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T08:37:56.541Z"
             },
             {
               "$type": "Document",
@@ -135,8 +135,7 @@
               "RelativeToolTip": "MyCMS.Application\\Repositories\\Comments\\Services\\CommentService.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAgwDgAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T13:49:00.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T13:49:00.023Z"
             },
             {
               "$type": "Document",
@@ -148,8 +147,7 @@
               "RelativeToolTip": "MyCMS.Application\\Repositories\\Comments\\Interfaces\\ICommentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T13:48:25.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T13:48:25.319Z"
             }
           ]
         }
